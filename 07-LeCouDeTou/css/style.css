@@ -1,0 +1,408 @@
+/****************************/
+/*HEADER*/
+/****************************/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fbe0c4;
+
+  /* Because we wamt header to be sticky later*/
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.logo {
+  height: 8.6rem;
+  margin-top: 1.6rem;
+  /* display: inline-block; */
+}
+
+/***************************/
+/* NAVIGATION */
+/***************************/
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #256ca3;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.3rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #2978b5;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #256ca3;
+}
+
+/***************************/
+/* HERO SECTION */
+/***************************/
+
+.section-hero {
+  background-color: #fbe0c4;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  gap: 9.6rem;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.hammock-view {
+  display: flex;
+  margin-top: 8rem;
+  gap: 5.2rem;
+  align-items: center;
+}
+
+.hammock-img {
+  display: flex;
+}
+
+.hammock-img img {
+  height: 15rem;
+  border-radius: 9px;
+}
+
+.hammock-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.hammock-text span {
+  color: #2978b5;
+  font-weight: 700;
+}
+
+/***************************/
+/* Featured In SECTION */
+/***************************/
+
+.section-featured {
+  padding: 4.8rem 0 3.2rem 0;
+}
+
+.heading-featured-in {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  color: #888;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logos img {
+  height: 3.2rem;
+  filter: grayscale(100);
+  opacity: 50%;
+}
+
+/***************************/
+/* LG SECTION */
+/***************************/
+
+.section-LG {
+  padding: 9.6rem 0;
+}
+
+.location {
+  font-size: 7.2rem;
+  font-weight: 600;
+  color: #8ab6d6;
+  margin-bottom: 1.2rem;
+}
+
+.location-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.location-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-img {
+  width: 100%;
+}
+
+/**************************/
+/* MEALS SECTION */
+/**************************/
+
+.section-rooms {
+  padding: 9.6rem 0;
+}
+
+.rooms {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+  height: 530px;
+}
+
+.rooms:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.rooms-content {
+  padding: 3.2rem 3.2rem 4.8rem 3.2rem;
+}
+
+.rooms-tags {
+  margin-bottom: 1.4rem;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #333;
+  border-radius: 100px;
+  font-weight: 600;
+}
+
+.tag--patio {
+  background-color: #e2cab0;
+}
+.tag--ac {
+  background-color: #8ab6d6;
+}
+
+.rooms-title {
+  font-size: 2rem;
+  color: #111;
+  font-weight: 600;
+  margin-bottom: 3.6rem;
+}
+
+.rooms-title-ac {
+  margin-bottom: 2rem;
+}
+
+.rooms-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.rooms-attribute {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.rooms-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #2978b5;
+}
+
+.rooms-img {
+  width: 100%;
+  height: 27%;
+}
+
+.all-rooms {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+/**************************/
+/* ACTIVITIES SECTION */
+/**************************/
+
+.section-activities {
+  background-color: #fbe0c4;
+  display: grid;
+  grid-template-columns: 45fr 55fr;
+  align-items: center;
+}
+
+.activities-container {
+  padding: 9.6rem;
+}
+
+.activities {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
+
+.activity-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+
+.activity-number {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #8ab6d6;
+  margin-bottom: 1.2rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-item img {
+  display: block;
+  float: left;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  transition: all 0.4s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+/**************************/
+/* CTA SECTION */
+/**************************/
+
+.section-cta {
+  /* top / right / bottom / left */
+  /* padding: 9.6rem 0 12.8rem 0; */
+
+  /* top / horizontal / left */
+  padding: 4.8rem 0 12.8rem;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* background-color: #e67e22; */
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+
+  background-image: linear-gradient(to right bottom, #3e86bc, #2978b5);
+  overflow: hidden;
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #fffcf9;
+}
+
+.cta .heading-secondary {
+  /* color: #45260a; */
+  color: inherit;
+  margin-bottom: 3.2rem;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      hsla(206, 50%, 49%, 0.35),
+      hsla(206, 63%, 44%, 0.35)
+    ),
+    url("../img/staffan-coco-min.jpg");
+  background-size: cover;
+  background-position: left;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: #45260a;
+  border: none;
+  background-color: #fffcf9;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
